@@ -51,7 +51,8 @@ app.get('/info', (request, response) => {
     <p>${new Date()}</p>
     `);
 })
-
+//test to insure deploy successful
+app.get('/', (req, res) => { res.send('Hello from Express!');
 // get a specific user 
 app.get('/api/persons/:id', (request, response) => {
     const id = request.params.id;
