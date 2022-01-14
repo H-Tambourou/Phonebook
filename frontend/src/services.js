@@ -16,10 +16,10 @@ const remove = id => {
 const updateNumber = (id, newObject) => {
     return axios.put(`${baseUrl}/${id}`, newObject)
 }
-
-export default {
+const services = {
     getAll : getAll,
     create : create,
     remove : remove,
     updateNumber : updateNumber,
 }
+export default services;
