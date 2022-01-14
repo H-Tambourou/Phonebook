@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseUrl = 'http://localhost:3001/api/persons';
+const baseUrl = 'https://secret-ocean-82038.herokuapp.com/api/persons';
 
 const getAll = () => {
     return axios.get(baseUrl);
@@ -13,12 +13,13 @@ const create = newObject => {
 const remove = id => {
     return axios.delete(`${baseUrl}/${id}`);
 }
-// const updateNumber = (id, newObject) => {
-//     return axios.put(`${baseUrl}/${id}`, newObject)
-// }
+const updateNumber = (id, newObject) => {
+    return axios.put(`${baseUrl}/${id}`, newObject)
+}
 
 export default {
     getAll : getAll,
     create : create,
     remove : remove,
+    updateNumber : updateNumber,
 }
