@@ -1,6 +1,6 @@
 # Phonebook
 
-## https://jolly-lamarr-c40fbb.netlify.app/
+Website to store contacts.
 
 ## Features
 
